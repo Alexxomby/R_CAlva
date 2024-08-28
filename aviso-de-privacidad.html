@@ -1,204 +1,747 @@
 <!DOCTYPE html>
 <html class="nojs html css_verticalspacer" lang="es-ES">
- <head>
+  <head>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    <meta name="generator" content="2017.1.0.379" />
 
-  <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
-  <meta name="generator" content="2017.1.0.379"/>
-  
-  <script type="text/javascript">
-   // Redirect to phone/tablet as necessary
-(function(a,b,c){var d=function(){if(navigator.maxTouchPoints>1)return!0;if(window.matchMedia&&window.matchMedia("(-moz-touch-enabled)").matches)return!0;for(var a=["Webkit","Moz","O","ms","Khtml"],b=0,c=a.length;b<c;b++){var f=a[b]+"MaxTouchPoints";if(f in navigator&&navigator[f])return!0}try{return document.createEvent("TouchEvent"),!0}catch(d){}return!1}(),g=function(a){a+="=";for(var b=document.cookie.split(";"),c=0;c<b.length;c++){for(var f=b[c];f.charAt(0)==" ";)f=f.substring(1,f.length);if(f.indexOf(a)==
-0)return f.substring(a.length,f.length)}return null};if(g("inbrowserediting")!="true"){var f,g=g("devicelock");g=="phone"&&c?f=c:g=="tablet"&&b&&(f=b);if(g!=a&&!f)if(window.matchMedia)window.matchMedia("(max-device-width: 415px)").matches&&c?f=c:window.matchMedia("(max-device-width: 960px)").matches&&b&&d&&(f=b);else{var a=Math.min(screen.width,screen.height)/(window.devicePixelRatio||1),g=window.screen.systemXDPI||0,i=window.screen.systemYDPI||0,g=g>0&&i>0?Math.min(screen.width/g,screen.height/i):
-0;(a<=370||g!=0&&g<=3)&&c?f=c:a<=960&&b&&d&&(f=b)}if(f)document.location=f+(document.location.search||"")+(document.location.hash||""),document.write('<style type="text/css">body {visibility:hidden}</style>')}})("desktop","tablet/aviso-de-privacidad.html","");
+    <script type="text/javascript">
+      // Redirect to phone/tablet as necessary
+      (function (a, b, c) {
+        var d = (function () {
+            if (navigator.maxTouchPoints > 1) return !0;
+            if (
+              window.matchMedia &&
+              window.matchMedia("(-moz-touch-enabled)").matches
+            )
+              return !0;
+            for (
+              var a = ["Webkit", "Moz", "O", "ms", "Khtml"],
+                b = 0,
+                c = a.length;
+              b < c;
+              b++
+            ) {
+              var f = a[b] + "MaxTouchPoints";
+              if (f in navigator && navigator[f]) return !0;
+            }
+            try {
+              return document.createEvent("TouchEvent"), !0;
+            } catch (d) {}
+            return !1;
+          })(),
+          g = function (a) {
+            a += "=";
+            for (var b = document.cookie.split(";"), c = 0; c < b.length; c++) {
+              for (var f = b[c]; f.charAt(0) == " "; )
+                f = f.substring(1, f.length);
+              if (f.indexOf(a) == 0) return f.substring(a.length, f.length);
+            }
+            return null;
+          };
+        if (g("inbrowserediting") != "true") {
+          var f,
+            g = g("devicelock");
+          g == "phone" && c ? (f = c) : g == "tablet" && b && (f = b);
+          if (g != a && !f)
+            if (window.matchMedia)
+              window.matchMedia("(max-device-width: 415px)").matches && c
+                ? (f = c)
+                : window.matchMedia("(max-device-width: 960px)").matches &&
+                  b &&
+                  d &&
+                  (f = b);
+            else {
+              var a =
+                  Math.min(screen.width, screen.height) /
+                  (window.devicePixelRatio || 1),
+                g = window.screen.systemXDPI || 0,
+                i = window.screen.systemYDPI || 0,
+                g =
+                  g > 0 && i > 0
+                    ? Math.min(screen.width / g, screen.height / i)
+                    : 0;
+              (a <= 370 || (g != 0 && g <= 3)) && c
+                ? (f = c)
+                : a <= 960 && b && d && (f = b);
+            }
+          if (f)
+            (document.location =
+              f +
+              (document.location.search || "") +
+              (document.location.hash || "")),
+              document.write(
+                '<style type="text/css">body {visibility:hidden}</style>'
+              );
+        }
+      })("desktop", "tablet/aviso-de-privacidad.html", "");
 
-// Update the 'nojs'/'js' class on the html node
-document.documentElement.className = document.documentElement.className.replace(/\bnojs\b/g, 'js');
+      // Update the 'nojs'/'js' class on the html node
+      document.documentElement.className =
+        document.documentElement.className.replace(/\bnojs\b/g, "js");
 
-// Check that all required assets are uploaded and up-to-date
-if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required":["museutils.js", "museconfig.js", "jquery.watch.js", "webpro.js", "musewpslideshow.js", "jquery.museoverlay.js", "touchswipe.js", "require.js", "aviso-de-privacidad.css"], "outOfDate":[]};
-</script>
-  
-  <link media="only screen and (max-width: 960px)" rel="alternate" href="http://www.caballeroalva.com/tablet/aviso-de-privacidad.html"/>
-  <link rel="shortcut icon" href="images/a-master-favicon.ico?crc=44149188"/>
-  <title>Caballero Alva ConsultoresAviso de Privacidad</title>
-  <!-- CSS -->
-  <link rel="stylesheet" type="text/css" href="css/site_global.css?crc=3785576048"/>
-  <link rel="stylesheet" type="text/css" href="css/master_a-master.css?crc=141785162"/>
-  <link rel="stylesheet" type="text/css" href="css/aviso-de-privacidad.css?crc=292837367" id="pagesheet"/>
+      // Check that all required assets are uploaded and up-to-date
+      if (typeof Muse == "undefined") window.Muse = {};
+      window.Muse.assets = {
+        required: [
+          "museutils.js",
+          "museconfig.js",
+          "jquery.watch.js",
+          "webpro.js",
+          "musewpslideshow.js",
+          "jquery.museoverlay.js",
+          "touchswipe.js",
+          "require.js",
+          "aviso-de-privacidad.css",
+        ],
+        outOfDate: [],
+      };
+    </script>
+
+    <link
+      media="only screen and (max-width: 960px)"
+      rel="alternate"
+      href="http://www.caballeroalva.com/tablet/aviso-de-privacidad.html"
+    />
+    <link rel="shortcut icon" href="images/a-master-favicon.ico?crc=44149188" />
+    <title>Caballero Alva ConsultoresAviso de Privacidad</title>
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="css/site_global.css?crc=3785576048"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="css/master_a-master.css?crc=141785162"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="css/aviso-de-privacidad.css?crc=292837367"
+      id="pagesheet"
+    />
     <!--HTML Widget code-->
-  
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
-<script>
-jQuery(document).ready(function($) {  
 
-// site preloader -- also uncomment the div in the header and the css style for #preloader
-$(window).load(function(){
-	$('#preloader').fadeOut('slow',function(){$(this).remove();});
-});
+    <script
+      type="text/javascript"
+      src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"
+    ></script>
+    <script>
+      jQuery(document).ready(function ($) {
+        // site preloader -- also uncomment the div in the header and the css style for #preloader
+        $(window).load(function () {
+          $("#preloader").fadeOut("slow", function () {
+            $(this).remove();
+          });
+        });
+      });
+    </script>
 
-});
-</script>
+    <style>
+      .js div#preloader {
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 999;
+        width: 100%;
+        height: 100%;
+        overflow: visible;
+        background: #ffffff url("assets/ajax-loader.gif") no-repeat center
+          center;
+      }
+    </style>
+  </head>
+  <body>
+    <!--HTML Widget code-->
 
-<style>
-.js div#preloader { position: fixed; left: 0; top: 0; z-index: 999; width: 100%; height: 100%; overflow: visible; background: #FFFFFF url('assets/ajax-loader.gif') no-repeat center center; }
-</style>
+    <div id="feliz"></div>
 
- </head>
- <body>
-
-  <!--HTML Widget code-->
-  
-<div id="preloader"></div>
-
-  
-  <div class="clearfix" id="page"><!-- group -->
-   <div class="clearfix grpelem" id="pu2458-53"><!-- group -->
-    <div class="browser_width grpelem" id="u2458-53-bw">
-     <div class="clearfix" id="u2458-53"><!-- content -->
-      <p id="u2458">&nbsp;</p>
-      <p id="u2458-3">Aviso de Privacidad</p>
-      <p id="u2458-4">&nbsp;</p>
-      <p id="u2458-5">&nbsp;</p>
-      <p id="u2458-6">&nbsp;</p>
-      <p id="u2458-8">Caballero Alva Consultores SC, con domicilio establecido en Reforma No. 342, piso 21, despacho 2114, Torre New York Life, Colonia Juárez, Código Postal 06600, Delegación Cuauhtemoc, México, Distrito Federal, actualmente cumple con la Ley Federal de Protección de Datos Personales en Posesión de los Particulares, publicada en el Diario Oficial de la Federación el 5 de Julio del 2010.</p>
-      <p id="u2458-9">&nbsp;</p>
-      <p id="u2458-10">&nbsp;</p>
-      <p id="u2458-11">&nbsp;</p>
-      <p id="u2458-13">En virtud de lo anterior, sus datos personales referidos en los documentos requisitados y/o entregados por cualquier medio por usted, solo se utilizarán para fines relacionados con la naturaleza de nuestro negocio, nuestro departamento reclutamiento y/o para emisión de pólizas con las instituciones de Seguros y Fianzas, con las que tenemos relación comercial.</p>
-      <p id="u2458-14">&nbsp;</p>
-      <p id="u2458-15">&nbsp;</p>
-      <p id="u2458-16">&nbsp;</p>
-      <p id="u2458-18">Así mismo, hacemos de su conocimiento que hemos celebrado Convenios de Confidencialidad y Medidas de Seguridad que establecen las Leyes Mexicanas con dichas Instituciones. En ese tenor, al aceptar nuestra política de privacidad, usted está de acuerdo en que podamos compartir su información y documentación, con el fin de desarrollar en forma óptima el objetivo de nuestra Empresa y brindarle el servicio previamente convenido con nuestros asesores o nosotros mismos, no omitiendo mencionar que a su vez requerimos a dichos proveedores y prestadores de servicios protejan toda la información, no la divulguen y no se utilice para distintos de los fines convenidos.</p>
-      <p id="u2458-19">&nbsp;</p>
-      <p id="u2458-20">&nbsp;</p>
-      <p id="u2458-21">&nbsp;</p>
-      <p id="u2458-23">A partir del 6 de enero de 2012, usted podrá ejercer los derechos de acceso, cancelación, rectificación y oposición al tratamiento de sus datos personales (derechos ARCO), o bien revocar el consentimiento para el tratamiento de sus datos personales, entregando directamente su solicitud en las oficinas de Caballero Alva Consultores S.C. Dicha solicitud deberá contener por lo menos:</p>
-      <p id="u2458-24">&nbsp;</p>
-      <p id="u2458-25">&nbsp;</p>
-      <p id="u2458-26">&nbsp;</p>
-      <p id="u2458-28">a) nombre, domicilio, correo electrónico&nbsp; u otro medio para comunicarle la respuesta a su solicitud,</p>
-      <p id="u2458-29">&nbsp;</p>
-      <p id="u2458-31">b) los documentos que acrediten su identidad, o representación legal, según sea el caso,</p>
-      <p id="u2458-32">&nbsp;</p>
-      <p id="u2458-34">c) la descripción clara y precisa de los datos personales respecto de los que solicita ejercer alguno de los derechos ARCO y</p>
-      <p id="u2458-35">&nbsp;</p>
-      <p id="u2458-37">d) la manifestación expresa para revocar el tratamiento de sus datos personales y por tanto, para que no se usen.</p>
-      <p id="u2458-38">&nbsp;</p>
-      <p id="u2458-39">&nbsp;</p>
-      <p id="u2458-40">&nbsp;</p>
-      <p id="u2458-45">En caso de cambios importantes en este Aviso de Privacidad, lo haremos de su conocimiento a través, de esta página de Internet<a class="nonblock" href="http://www.caballeroalva.com"> www.caballeroalva.com</a> , en nuestras oficinas o de forma personal a través de su asesor.</p>
-      <p id="u2458-46">&nbsp;</p>
-      <p id="u2458-47">&nbsp;</p>
-      <p id="u2458-48">&nbsp;</p>
-      <p id="u2458-50">Quedamos como siempre a sus órdenes en los teléfonos 5326 9632 (9633) y 5254 2884.</p>
-      <p id="u2458-51">&nbsp;</p>
-     </div>
-    </div>
-    <div class="PamphletWidget clearfix" id="pamphletu965"><!-- none box -->
-     <div class="popup_anchor" id="u974popup">
-      <div class="ContainerGroup clearfix" id="u974"><!-- stack box -->
-       <div class="Container invi clearfix grpelem" id="u975"><!-- group -->
-        <div class="clearfix grpelem" id="pu979"><!-- group -->
-         <div class="grpelem" id="u979"><!-- simple frame --></div>
-         <a class="nonblock nontext grpelem" id="u980" href="caballero-alva-consultores.html#inicio"><!-- state-based BG images --><img id="u980_states" alt="INICIO" src="images/blank.gif?crc=4208392903"/></a>
-         <a class="nonblock nontext grpelem" id="u983" href="caballero-alva-consultores.html#personas"><!-- state-based BG images --><img id="u983_states" alt="PERSONAS" src="images/blank.gif?crc=4208392903"/></a>
-         <a class="nonblock nontext grpelem" id="u981" href="caballero-alva-consultores.html#empresas"><!-- state-based BG images --><img id="u981_states" alt="EMPRESAS" src="images/blank.gif?crc=4208392903"/></a>
-         <a class="nonblock nontext grpelem" id="u982" href="caballero-alva-consultores.html#fianzas"><!-- state-based BG images --><img id="u982_states" alt="FIANZAS" src="images/blank.gif?crc=4208392903"/></a>
-         <a class="nonblock nontext grpelem" id="u984" href="caballero-alva-consultores.html#contacto"><!-- state-based BG images --><img id="u984_states" alt="CONTACTO" src="images/blank.gif?crc=4208392903"/></a>
-         <a class="nonblock nontext grpelem" id="u978" href="unete-a-nuestro-equipo.html" target="_blank"><!-- state-based BG images --><img id="u978_states" alt="ÚNETE A NUESTRO EQUIPO" src="images/blank.gif?crc=4208392903"/></a>
-         <a class="nonblock nontext grpelem" id="u11891" href="confidencial.html" target="_blank"><!-- state-based BG images --><img id="u11891_states" alt="Cuestionario Confidencial" src="images/blank.gif?crc=4208392903"/></a>
-         <a class="nonblock nontext grpelem" id="u985" href="caballero-alva-consultores.html#nosotros"><!-- state-based BG images --><img id="u985_states" alt="NOSOTROS" src="images/blank.gif?crc=4208392903"/></a>
+    <div class="clearfix" id="page">
+      <!-- group -->
+      <div class="clearfix grpelem" id="pu2458-53">
+        <!-- group -->
+        <div class="browser_width grpelem" id="u2458-53-bw">
+          <div class="clearfix" id="u2458-53">
+            <!-- content -->
+            <p id="u2458">&nbsp;</p>
+            <p id="u2458-3">Aviso de Privacidad</p>
+            <p id="u2458-4">&nbsp;</p>
+            <p id="u2458-5">&nbsp;</p>
+            <p id="u2458-6">&nbsp;</p>
+            <p id="u2458-8">
+              Caballero Alva Consultores SC, con domicilio establecido en
+              Reforma No. 342, piso 21, despacho 2114, Torre New York Life,
+              Colonia Juárez, Código Postal 06600, Delegación Cuauhtemoc,
+              México, Distrito Federal, actualmente cumple con la Ley Federal de
+              Protección de Datos Personales en Posesión de los Particulares,
+              publicada en el Diario Oficial de la Federación el 5 de Julio del
+              2010.
+            </p>
+            <p id="u2458-9">&nbsp;</p>
+            <p id="u2458-10">&nbsp;</p>
+            <p id="u2458-11">&nbsp;</p>
+            <p id="u2458-13">
+              En virtud de lo anterior, sus datos personales referidos en los
+              documentos requisitados y/o entregados por cualquier medio por
+              usted, solo se utilizarán para fines relacionados con la
+              naturaleza de nuestro negocio, nuestro departamento reclutamiento
+              y/o para emisión de pólizas con las instituciones de Seguros y
+              Fianzas, con las que tenemos relación comercial.
+            </p>
+            <p id="u2458-14">&nbsp;</p>
+            <p id="u2458-15">&nbsp;</p>
+            <p id="u2458-16">&nbsp;</p>
+            <p id="u2458-18">
+              Así mismo, hacemos de su conocimiento que hemos celebrado
+              Convenios de Confidencialidad y Medidas de Seguridad que
+              establecen las Leyes Mexicanas con dichas Instituciones. En ese
+              tenor, al aceptar nuestra política de privacidad, usted está de
+              acuerdo en que podamos compartir su información y documentación,
+              con el fin de desarrollar en forma óptima el objetivo de nuestra
+              Empresa y brindarle el servicio previamente convenido con nuestros
+              asesores o nosotros mismos, no omitiendo mencionar que a su vez
+              requerimos a dichos proveedores y prestadores de servicios
+              protejan toda la información, no la divulguen y no se utilice para
+              distintos de los fines convenidos.
+            </p>
+            <p id="u2458-19">&nbsp;</p>
+            <p id="u2458-20">&nbsp;</p>
+            <p id="u2458-21">&nbsp;</p>
+            <p id="u2458-23">
+              A partir del 6 de enero de 2012, usted podrá ejercer los derechos
+              de acceso, cancelación, rectificación y oposición al tratamiento
+              de sus datos personales (derechos ARCO), o bien revocar el
+              consentimiento para el tratamiento de sus datos personales,
+              entregando directamente su solicitud en las oficinas de Caballero
+              Alva Consultores S.C. Dicha solicitud deberá contener por lo
+              menos:
+            </p>
+            <p id="u2458-24">&nbsp;</p>
+            <p id="u2458-25">&nbsp;</p>
+            <p id="u2458-26">&nbsp;</p>
+            <p id="u2458-28">
+              a) nombre, domicilio, correo electrónico&nbsp; u otro medio para
+              comunicarle la respuesta a su solicitud,
+            </p>
+            <p id="u2458-29">&nbsp;</p>
+            <p id="u2458-31">
+              b) los documentos que acrediten su identidad, o representación
+              legal, según sea el caso,
+            </p>
+            <p id="u2458-32">&nbsp;</p>
+            <p id="u2458-34">
+              c) la descripción clara y precisa de los datos personales respecto
+              de los que solicita ejercer alguno de los derechos ARCO y
+            </p>
+            <p id="u2458-35">&nbsp;</p>
+            <p id="u2458-37">
+              d) la manifestación expresa para revocar el tratamiento de sus
+              datos personales y por tanto, para que no se usen.
+            </p>
+            <p id="u2458-38">&nbsp;</p>
+            <p id="u2458-39">&nbsp;</p>
+            <p id="u2458-40">&nbsp;</p>
+            <p id="u2458-45">
+              En caso de cambios importantes en este Aviso de Privacidad, lo
+              haremos de su conocimiento a través, de esta página de Internet<a
+                class="nonblock"
+                href="http://www.caballeroalva.com"
+              >
+                www.caballeroalva.com</a
+              >
+              , en nuestras oficinas o de forma personal a través de su asesor.
+            </p>
+            <p id="u2458-46">&nbsp;</p>
+            <p id="u2458-47">&nbsp;</p>
+            <p id="u2458-48">&nbsp;</p>
+            <p id="u2458-50">
+              Quedamos como siempre a sus órdenes en los teléfonos 5326 9632
+              (9633) y 5254 2884.
+            </p>
+            <p id="u2458-51">&nbsp;</p>
+          </div>
         </div>
-        <div class="clearfix grpelem" id="u976"><!-- group -->
-         <div class="grpelem" id="u977"><!-- content --></div>
+        <div class="PamphletWidget clearfix" id="pamphletu965">
+          <!-- none box -->
+          <div class="popup_anchor" id="u974popup">
+            <div class="ContainerGroup clearfix" id="u974">
+              <!-- stack box -->
+              <div class="Container invi clearfix grpelem" id="u975">
+                <!-- group -->
+                <div class="clearfix grpelem" id="pu979">
+                  <!-- group -->
+                  <div class="grpelem" id="u979"><!-- simple frame --></div>
+                  <a
+                    class="nonblock nontext grpelem"
+                    id="u980"
+                    href="caballero-alva-consultores.html#inicio"
+                    ><!-- state-based BG images --><img
+                      id="u980_states"
+                      alt="INICIO"
+                      src="images/blank.gif?crc=4208392903"
+                  /></a>
+                  <a
+                    class="nonblock nontext grpelem"
+                    id="u983"
+                    href="caballero-alva-consultores.html#personas"
+                    ><!-- state-based BG images --><img
+                      id="u983_states"
+                      alt="PERSONAS"
+                      src="images/blank.gif?crc=4208392903"
+                  /></a>
+                  <a
+                    class="nonblock nontext grpelem"
+                    id="u981"
+                    href="caballero-alva-consultores.html#empresas"
+                    ><!-- state-based BG images --><img
+                      id="u981_states"
+                      alt="EMPRESAS"
+                      src="images/blank.gif?crc=4208392903"
+                  /></a>
+                  <a
+                    class="nonblock nontext grpelem"
+                    id="u982"
+                    href="caballero-alva-consultores.html#fianzas"
+                    ><!-- state-based BG images --><img
+                      id="u982_states"
+                      alt="FIANZAS"
+                      src="images/blank.gif?crc=4208392903"
+                  /></a>
+                  <a
+                    class="nonblock nontext grpelem"
+                    id="u984"
+                    href="caballero-alva-consultores.html#contacto"
+                    ><!-- state-based BG images --><img
+                      id="u984_states"
+                      alt="CONTACTO"
+                      src="images/blank.gif?crc=4208392903"
+                  /></a>
+                  <a
+                    class="nonblock nontext grpelem"
+                    id="u978"
+                    href="unete-a-nuestro-equipo.html"
+                    target="_blank"
+                    ><!-- state-based BG images --><img
+                      id="u978_states"
+                      alt="ÚNETE A NUESTRO EQUIPO"
+                      src="images/blank.gif?crc=4208392903"
+                  /></a>
+                  <a
+                    class="nonblock nontext grpelem"
+                    id="u11891"
+                    href="confidencial.html"
+                    target="_blank"
+                    ><!-- state-based BG images --><img
+                      id="u11891_states"
+                      alt="Cuestionario Confidencial"
+                      src="images/blank.gif?crc=4208392903"
+                  /></a>
+                  <a
+                    class="nonblock nontext grpelem"
+                    id="u985"
+                    href="caballero-alva-consultores.html#nosotros"
+                    ><!-- state-based BG images --><img
+                      id="u985_states"
+                      alt="NOSOTROS"
+                      src="images/blank.gif?crc=4208392903"
+                  /></a>
+                </div>
+                <div class="clearfix grpelem" id="u976">
+                  <!-- group -->
+                  <div class="grpelem" id="u977"><!-- content --></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ThumbGroup clearfix grpelem" id="u966">
+            <!-- none box -->
+            <div class="popup_anchor" id="u967popup">
+              <div class="Thumb popup_element clearfix" id="u967">
+                <!-- group -->
+                <div class="clip_frame clearfix grpelem" id="u968">
+                  <!-- image -->
+                  <img
+                    class="position_content"
+                    id="u968_img"
+                    src="images/menu_icon_04_white_3line-crop-u968.png?crc=4113681886"
+                    alt=""
+                    width="40"
+                    height="32"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="popup_anchor" id="u986popup">
+            <div
+              class="PamphletCloseButton PamphletLightboxPart popup_element clearfix"
+              id="u986"
+            >
+              <!-- group -->
+              <div class="clip_frame grpelem" id="u987">
+                <!-- image -->
+                <img
+                  class="block"
+                  id="u987_img"
+                  src="images/close_light.png?crc=3812482441"
+                  alt=""
+                  width="60"
+                  height="62"
+                />
+              </div>
+            </div>
+          </div>
         </div>
-       </div>
-      </div>
-     </div>
-     <div class="ThumbGroup clearfix grpelem" id="u966"><!-- none box -->
-      <div class="popup_anchor" id="u967popup">
-       <div class="Thumb popup_element clearfix" id="u967"><!-- group -->
-        <div class="clip_frame clearfix grpelem" id="u968"><!-- image -->
-         <img class="position_content" id="u968_img" src="images/menu_icon_04_white_3line-crop-u968.png?crc=4113681886" alt="" width="40" height="32"/>
+        <div class="browser_width" id="u2090-bw">
+          <div id="u2090"><!-- simple frame --></div>
         </div>
-       </div>
+        <a
+          class="nonblock nontext"
+          id="u2091"
+          href="https://www.facebook.com/caballeroalva.consultores?fref=ts"
+          target="_blank"
+          ><!-- simple frame --></a
+        >
+        <img
+          id="u2092-4"
+          alt="&nbsp;Paseo de la Reforma 342 - 2114, Col. Juárez, 06600 Ciudad de México, México"
+          width="435"
+          height="18"
+          src="images/u2092-4.png?crc=454424679"
+        /><!-- rasterized frame -->
+        <img
+          id="u2093-4"
+          alt="5254-2884"
+          width="63"
+          height="18"
+          src="images/u2093-4.png?crc=3875620035"
+        /><!-- rasterized frame -->
+        <img
+          id="u2094-4"
+          alt="LADA (55)"
+          width="65"
+          height="18"
+          src="images/u2094-4.png?crc=4120737149"
+        /><!-- rasterized frame -->
+        <img
+          id="u2095-4"
+          alt="5545-8905"
+          width="66"
+          height="18"
+          src="images/u2095-4.png?crc=3920033053"
+        /><!-- rasterized frame -->
       </div>
-     </div>
-     <div class="popup_anchor" id="u986popup">
-      <div class="PamphletCloseButton PamphletLightboxPart popup_element clearfix" id="u986"><!-- group -->
-       <div class="clip_frame grpelem" id="u987"><!-- image -->
-        <img class="block" id="u987_img" src="images/close_light.png?crc=3812482441" alt="" width="60" height="62"/>
-       </div>
-      </div>
-     </div>
+      <div
+        class="verticalspacer"
+        data-offset-top="1626"
+        data-content-above-spacer="1625"
+        data-content-below-spacer="61"
+      ></div>
+      <div class="size_fixed grpelem" id="u7404"><!-- custom html --></div>
     </div>
-    <div class="browser_width" id="u2090-bw">
-     <div id="u2090"><!-- simple frame --></div>
+    <div class="preload_images">
+      <img
+        class="preload"
+        src="images/u980_states-r.png?crc=217179718"
+        alt=""
+      />
+      <img
+        class="preload"
+        src="images/u980_states-m.png?crc=217179718"
+        alt=""
+      />
+      <img
+        class="preload"
+        src="images/u980_states-a.png?crc=509891094"
+        alt=""
+      />
+      <img
+        class="preload"
+        src="images/u983_states-r.png?crc=4023947025"
+        alt=""
+      />
+      <img
+        class="preload"
+        src="images/u983_states-m.png?crc=4023947025"
+        alt=""
+      />
+      <img
+        class="preload"
+        src="images/u983_states-a.png?crc=246022975"
+        alt=""
+      />
+      <img
+        class="preload"
+        src="images/u981_states-r.png?crc=143399571"
+        alt=""
+      />
+      <img
+        class="preload"
+        src="images/u981_states-m.png?crc=143399571"
+        alt=""
+      />
+      <img
+        class="preload"
+        src="images/u981_states-a.png?crc=3931455278"
+        alt=""
+      />
+      <img
+        class="preload"
+        src="images/u982_states-r.png?crc=396457798"
+        alt=""
+      />
+      <img
+        class="preload"
+        src="images/u982_states-m.png?crc=396457798"
+        alt=""
+      />
+      <img
+        class="preload"
+        src="images/u982_states-a.png?crc=453351761"
+        alt=""
+      />
+      <img
+        class="preload"
+        src="images/u984_states-r.png?crc=309965142"
+        alt=""
+      />
+      <img
+        class="preload"
+        src="images/u984_states-m.png?crc=309965142"
+        alt=""
+      />
+      <img
+        class="preload"
+        src="images/u984_states-a.png?crc=3809425508"
+        alt=""
+      />
+      <img
+        class="preload"
+        src="images/u978_states-r.png?crc=290532210"
+        alt=""
+      />
+      <img
+        class="preload"
+        src="images/u978_states-m.png?crc=290532210"
+        alt=""
+      />
+      <img
+        class="preload"
+        src="images/u978_states-a.png?crc=3809354361"
+        alt=""
+      />
+      <img
+        class="preload"
+        src="images/u11891_states-r.png?crc=484346465"
+        alt=""
+      />
+      <img
+        class="preload"
+        src="images/u11891_states-m.png?crc=484346465"
+        alt=""
+      />
+      <img
+        class="preload"
+        src="images/u11891_states-a.png?crc=484346465"
+        alt=""
+      />
+      <img
+        class="preload"
+        src="images/u985_states-r.png?crc=4253767791"
+        alt=""
+      />
+      <img
+        class="preload"
+        src="images/u985_states-m.png?crc=4253767791"
+        alt=""
+      />
+      <img
+        class="preload"
+        src="images/u985_states-a.png?crc=3760917374"
+        alt=""
+      />
     </div>
-    <a class="nonblock nontext" id="u2091" href="https://www.facebook.com/caballeroalva.consultores?fref=ts" target="_blank"><!-- simple frame --></a>
-    <img id="u2092-4" alt="&nbsp;Paseo de la Reforma 342 - 2114, Col. Juárez, 06600 Ciudad de México, México" width="435" height="18" src="images/u2092-4.png?crc=454424679"/><!-- rasterized frame -->
-    <img id="u2093-4" alt="5254-2884" width="63" height="18" src="images/u2093-4.png?crc=3875620035"/><!-- rasterized frame -->
-    <img id="u2094-4" alt="LADA (55)" width="65" height="18" src="images/u2094-4.png?crc=4120737149"/><!-- rasterized frame -->
-    <img id="u2095-4" alt="5545-8905" width="66" height="18" src="images/u2095-4.png?crc=3920033053"/><!-- rasterized frame -->
-   </div>
-   <div class="verticalspacer" data-offset-top="1626" data-content-above-spacer="1625" data-content-below-spacer="61"></div>
-   <div class="size_fixed grpelem" id="u7404"><!-- custom html -->
-    
-            
-   </div>
-  </div>
-  <div class="preload_images">
-   <img class="preload" src="images/u980_states-r.png?crc=217179718" alt=""/>
-   <img class="preload" src="images/u980_states-m.png?crc=217179718" alt=""/>
-   <img class="preload" src="images/u980_states-a.png?crc=509891094" alt=""/>
-   <img class="preload" src="images/u983_states-r.png?crc=4023947025" alt=""/>
-   <img class="preload" src="images/u983_states-m.png?crc=4023947025" alt=""/>
-   <img class="preload" src="images/u983_states-a.png?crc=246022975" alt=""/>
-   <img class="preload" src="images/u981_states-r.png?crc=143399571" alt=""/>
-   <img class="preload" src="images/u981_states-m.png?crc=143399571" alt=""/>
-   <img class="preload" src="images/u981_states-a.png?crc=3931455278" alt=""/>
-   <img class="preload" src="images/u982_states-r.png?crc=396457798" alt=""/>
-   <img class="preload" src="images/u982_states-m.png?crc=396457798" alt=""/>
-   <img class="preload" src="images/u982_states-a.png?crc=453351761" alt=""/>
-   <img class="preload" src="images/u984_states-r.png?crc=309965142" alt=""/>
-   <img class="preload" src="images/u984_states-m.png?crc=309965142" alt=""/>
-   <img class="preload" src="images/u984_states-a.png?crc=3809425508" alt=""/>
-   <img class="preload" src="images/u978_states-r.png?crc=290532210" alt=""/>
-   <img class="preload" src="images/u978_states-m.png?crc=290532210" alt=""/>
-   <img class="preload" src="images/u978_states-a.png?crc=3809354361" alt=""/>
-   <img class="preload" src="images/u11891_states-r.png?crc=484346465" alt=""/>
-   <img class="preload" src="images/u11891_states-m.png?crc=484346465" alt=""/>
-   <img class="preload" src="images/u11891_states-a.png?crc=484346465" alt=""/>
-   <img class="preload" src="images/u985_states-r.png?crc=4253767791" alt=""/>
-   <img class="preload" src="images/u985_states-m.png?crc=4253767791" alt=""/>
-   <img class="preload" src="images/u985_states-a.png?crc=3760917374" alt=""/>
-  </div>
-  <!-- Other scripts -->
-  <script type="text/javascript">
-   // Decide weather to suppress missing file error or not based on preference setting
-var suppressMissingFileError = false
-</script>
-  <script type="text/javascript">
-   window.Muse.assets.check=function(d){if(!window.Muse.assets.checked){window.Muse.assets.checked=!0;var b={},c=function(a,b){if(window.getComputedStyle){var c=window.getComputedStyle(a,null);return c&&c.getPropertyValue(b)||c&&c[b]||""}if(document.documentElement.currentStyle)return(c=a.currentStyle)&&c[b]||a.style&&a.style[b]||"";return""},a=function(a){if(a.match(/^rgb/))return a=a.replace(/\s+/g,"").match(/([\d\,]+)/gi)[0].split(","),(parseInt(a[0])<<16)+(parseInt(a[1])<<8)+parseInt(a[2]);if(a.match(/^\#/))return parseInt(a.substr(1),
-16);return 0},g=function(g){for(var f=document.getElementsByTagName("link"),h=0;h<f.length;h++)if("text/css"==f[h].type){var i=(f[h].href||"").match(/\/?css\/([\w\-]+\.css)\?crc=(\d+)/);if(!i||!i[1]||!i[2])break;b[i[1]]=i[2]}f=document.createElement("div");f.className="version";f.style.cssText="display:none; width:1px; height:1px;";document.getElementsByTagName("body")[0].appendChild(f);for(h=0;h<Muse.assets.required.length;){var i=Muse.assets.required[h],l=i.match(/([\w\-\.]+)\.(\w+)$/),k=l&&l[1]?
-l[1]:null,l=l&&l[2]?l[2]:null;switch(l.toLowerCase()){case "css":k=k.replace(/\W/gi,"_").replace(/^([^a-z])/gi,"_$1");f.className+=" "+k;k=a(c(f,"color"));l=a(c(f,"backgroundColor"));k!=0||l!=0?(Muse.assets.required.splice(h,1),"undefined"!=typeof b[i]&&(k!=b[i]>>>24||l!=(b[i]&16777215))&&Muse.assets.outOfDate.push(i)):h++;f.className="version";break;case "js":h++;break;default:throw Error("Unsupported file type: "+l);}}d?d().jquery!="1.8.3"&&Muse.assets.outOfDate.push("jquery-1.8.3.min.js"):Muse.assets.required.push("jquery-1.8.3.min.js");
-f.parentNode.removeChild(f);if(Muse.assets.outOfDate.length||Muse.assets.required.length)f="Puede que determinados archivos falten en el servidor o sean incorrectos. Limpie la cache del navegador e inténtelo de nuevo. Si el problema persiste, póngase en contacto con el administrador del sitio web.",g&&Muse.assets.outOfDate.length&&(f+="\nOut of date: "+Muse.assets.outOfDate.join(",")),g&&Muse.assets.required.length&&(f+="\nMissing: "+Muse.assets.required.join(",")),suppressMissingFileError?(f+="\nUse SuppressMissingFileError key in AppPrefs.xml to show missing file error pop up.",console.log(f)):alert(f)};location&&location.search&&location.search.match&&location.search.match(/muse_debug/gi)?
-setTimeout(function(){g(!0)},5E3):g()}};
-var muse_init=function(){require.config({baseUrl:""});require(["jquery","museutils","whatinput","jquery.watch","webpro","musewpslideshow","jquery.museoverlay","touchswipe"],function(d){var $ = d;$(document).ready(function(){try{
-window.Muse.assets.check($);/* body */
-Muse.Utils.transformMarkupToFixBrowserProblemsPreInit();/* body */
-Muse.Utils.prepHyperlinks(true);/* body */
-Muse.Utils.resizeHeight('.browser_width');/* resize height */
-Muse.Utils.requestAnimationFrame(function() { $('body').addClass('initialized'); });/* mark body as initialized */
-Muse.Utils.makeButtonsVisibleAfterSettingMinWidth();/* body */
-Muse.Utils.initWidget('#pamphletu965', ['#bp_infinity'], function(elem) { return new WebPro.Widget.ContentSlideShow(elem, {contentLayout_runtime:'stack',event:'mouseover',deactivationEvent:'none',autoPlay:false,displayInterval:3000,transitionStyle:'fading',transitionDuration:500,hideAllContentsFirst:true,shuffle:false,enableSwipe:true,resumeAutoplay:false,resumeAutoplayInterval:3000,playOnce:false,autoActivate_runtime:false,isResponsive:false}); });/* #pamphletu965 */
-Muse.Utils.fullPage('#page');/* 100% height page */
-Muse.Utils.showWidgetsWhenReady();/* body */
-Muse.Utils.transformMarkupToFixBrowserProblems();/* body */
-}catch(b){if(b&&"function"==typeof b.notify?b.notify():Muse.Assert.fail("Error calling selector function: "+b),false)throw b;}})})};
-
-</script>
-  <!-- RequireJS script -->
-  <script src="scripts/require.js?crc=3861931657" type="text/javascript" async data-main="scripts/museconfig.js?crc=144853533" onload="if (requirejs) requirejs.onError = function(requireType, requireModule) { if (requireType && requireType.toString && requireType.toString().indexOf && 0 <= requireType.toString().indexOf('#scripterror')) window.Muse.assets.check(); }" onerror="window.Muse.assets.check();"></script>
-   </body>
+    <!-- Other scripts -->
+    <script type="text/javascript">
+      // Decide weather to suppress missing file error or not based on preference setting
+      var suppressMissingFileError = false;
+    </script>
+    <script type="text/javascript">
+      window.Muse.assets.check = function (d) {
+        if (!window.Muse.assets.checked) {
+          window.Muse.assets.checked = !0;
+          var b = {},
+            c = function (a, b) {
+              if (window.getComputedStyle) {
+                var c = window.getComputedStyle(a, null);
+                return (c && c.getPropertyValue(b)) || (c && c[b]) || "";
+              }
+              if (document.documentElement.currentStyle)
+                return (
+                  ((c = a.currentStyle) && c[b]) ||
+                  (a.style && a.style[b]) ||
+                  ""
+                );
+              return "";
+            },
+            a = function (a) {
+              if (a.match(/^rgb/))
+                return (
+                  (a = a
+                    .replace(/\s+/g, "")
+                    .match(/([\d\,]+)/gi)[0]
+                    .split(",")),
+                  (parseInt(a[0]) << 16) +
+                    (parseInt(a[1]) << 8) +
+                    parseInt(a[2])
+                );
+              if (a.match(/^\#/)) return parseInt(a.substr(1), 16);
+              return 0;
+            },
+            g = function (g) {
+              for (
+                var f = document.getElementsByTagName("link"), h = 0;
+                h < f.length;
+                h++
+              )
+                if ("text/css" == f[h].type) {
+                  var i = (f[h].href || "").match(
+                    /\/?css\/([\w\-]+\.css)\?crc=(\d+)/
+                  );
+                  if (!i || !i[1] || !i[2]) break;
+                  b[i[1]] = i[2];
+                }
+              f = document.createElement("div");
+              f.className = "version";
+              f.style.cssText = "display:none; width:1px; height:1px;";
+              document.getElementsByTagName("body")[0].appendChild(f);
+              for (h = 0; h < Muse.assets.required.length; ) {
+                var i = Muse.assets.required[h],
+                  l = i.match(/([\w\-\.]+)\.(\w+)$/),
+                  k = l && l[1] ? l[1] : null,
+                  l = l && l[2] ? l[2] : null;
+                switch (l.toLowerCase()) {
+                  case "css":
+                    k = k.replace(/\W/gi, "_").replace(/^([^a-z])/gi, "_$1");
+                    f.className += " " + k;
+                    k = a(c(f, "color"));
+                    l = a(c(f, "backgroundColor"));
+                    k != 0 || l != 0
+                      ? (Muse.assets.required.splice(h, 1),
+                        "undefined" != typeof b[i] &&
+                          (k != b[i] >>> 24 || l != (b[i] & 16777215)) &&
+                          Muse.assets.outOfDate.push(i))
+                      : h++;
+                    f.className = "version";
+                    break;
+                  case "js":
+                    h++;
+                    break;
+                  default:
+                    throw Error("Unsupported file type: " + l);
+                }
+              }
+              d
+                ? d().jquery != "1.8.3" &&
+                  Muse.assets.outOfDate.push("jquery-1.8.3.min.js")
+                : Muse.assets.required.push("jquery-1.8.3.min.js");
+              f.parentNode.removeChild(f);
+              if (Muse.assets.outOfDate.length || Muse.assets.required.length)
+                (f =
+                  "Puede que determinados archivos falten en el servidor o sean incorrectos. Limpie la cache del navegador e inténtelo de nuevo. Si el problema persiste, póngase en contacto con el administrador del sitio web."),
+                  g &&
+                    Muse.assets.outOfDate.length &&
+                    (f += "\nOut of date: " + Muse.assets.outOfDate.join(",")),
+                  g &&
+                    Muse.assets.required.length &&
+                    (f += "\nMissing: " + Muse.assets.required.join(",")),
+                  suppressMissingFileError
+                    ? ((f +=
+                        "\nUse SuppressMissingFileError key in AppPrefs.xml to show missing file error pop up."),
+                      console.log(f))
+                    : alert(f);
+            };
+          location &&
+          location.search &&
+          location.search.match &&
+          location.search.match(/muse_debug/gi)
+            ? setTimeout(function () {
+                g(!0);
+              }, 5e3)
+            : g();
+        }
+      };
+      var muse_init = function () {
+        require.config({ baseUrl: "" });
+        require([
+          "jquery",
+          "museutils",
+          "whatinput",
+          "jquery.watch",
+          "webpro",
+          "musewpslideshow",
+          "jquery.museoverlay",
+          "touchswipe",
+        ], function (d) {
+          var $ = d;
+          $(document).ready(function () {
+            try {
+              window.Muse.assets.check($); /* body */
+              Muse.Utils.transformMarkupToFixBrowserProblemsPreInit(); /* body */
+              Muse.Utils.prepHyperlinks(true); /* body */
+              Muse.Utils.resizeHeight(".browser_width"); /* resize height */
+              Muse.Utils.requestAnimationFrame(function () {
+                $("body").addClass("initialized");
+              }); /* mark body as initialized */
+              Muse.Utils.makeButtonsVisibleAfterSettingMinWidth(); /* body */
+              Muse.Utils.initWidget(
+                "#pamphletu965",
+                ["#bp_infinity"],
+                function (elem) {
+                  return new WebPro.Widget.ContentSlideShow(elem, {
+                    contentLayout_runtime: "stack",
+                    event: "mouseover",
+                    deactivationEvent: "none",
+                    autoPlay: false,
+                    displayInterval: 3000,
+                    transitionStyle: "fading",
+                    transitionDuration: 500,
+                    hideAllContentsFirst: true,
+                    shuffle: false,
+                    enableSwipe: true,
+                    resumeAutoplay: false,
+                    resumeAutoplayInterval: 3000,
+                    playOnce: false,
+                    autoActivate_runtime: false,
+                    isResponsive: false,
+                  });
+                }
+              ); /* #pamphletu965 */
+              Muse.Utils.fullPage("#page"); /* 100% height page */
+              Muse.Utils.showWidgetsWhenReady(); /* body */
+              Muse.Utils.transformMarkupToFixBrowserProblems(); /* body */
+            } catch (b) {
+              if (
+                (b && "function" == typeof b.notify
+                  ? b.notify()
+                  : Muse.Assert.fail("Error calling selector function: " + b),
+                false)
+              )
+                throw b;
+            }
+          });
+        });
+      };
+    </script>
+    <!-- RequireJS script -->
+    <script
+      src="scripts/require.js?crc=3861931657"
+      type="text/javascript"
+      async
+      data-main="scripts/museconfig.js?crc=144853533"
+      onload="if (requirejs) requirejs.onError = function(requireType, requireModule) { if (requireType && requireType.toString && requireType.toString().indexOf && 0 <= requireType.toString().indexOf('#scripterror')) window.Muse.assets.check(); }"
+      onerror="window.Muse.assets.check();"
+    ></script>
+  </body>
 </html>
